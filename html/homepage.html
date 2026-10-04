@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title>Homepage</title>
+<link rel="stylesheet" href="styleHome.css">
+<!---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!---------------------------------------------------------------------------------------------------------------->
+</head>
+   <body>
+        <div id = "header">
+			<img class = "logo" src = "image/logo.png" height = 100px>
+			<div id = "barra">
+				<img class = "lente" src = "image/lente.png">
+				<input type = "text" placeholder = "Inserisci la tua ricerca..." class = "barraricerca">
+			</div>
+			<h1 class = "titolo">Water Re-cycle</h1>
+		</div>
+		<div id = "menu" class = "flex-container">
+			<a href="homepage.html"><button class = "btt1" class = "flex-item"> Home </button></a>
+			<a href="#chisiamo"><button class = "btt1" class = "flex-item"> Chi siamo </button></a>
+			<a href="#startup"><button class = "btt1" class = "flex-item"> Startup </button></a>
+			<a href="#obbiettivo"><button class = "btt1" class = "flex-item"> Obbiettivo </button></a>
+			<div class="dropdown">
+                <a href="#prodotto"><button class = "btt1" class = "flex-item"> Prodotto </button></a>
+                    <div class="dropdown-content">
+                        <a href="pagina azienda.html"><buttom class = "btt2">Aziende</buttom></a>
+						<a href="pagina privato.html"><buttom class = "btt2">Privato</buttom></a>
+                    </div>
+            </div>
+			<a href="#settori"><button class = "btt1" class = "flex-item"> Settori </button></a>
+			<a href="form.html"><button class = "btt">Accedi   Registrati</button></a>
+		</div>
+        <div>
+			<div>
+				<!---------------------slideshow------------------------->
+				<img src="image/slideshow1.jpg" class="slide" alt="">
+				<img src="image/slideshow2.png" class="slide" alt="">
+				<img src="image/slideshow3.jpg" class="slide" alt="">
+	
+				<button class="slide-btn-back" onclick="slidesub()"><</button>
+				<button class="slide-btn-forward" onclick="slideadd()">></button>
+	
+					<script>
+						x = 0;
+						slides = document.getElementsByClassName("slide");
+						slides[x].style.display = "block";
+	
+						function slideadd()
+						{
+							slides[x].style.display = "none";
+								x+=1;
+								x%=3;
+							slides[x].style.display = "block";
+							}
+						
+						function slidesub()
+						{
+							slides[x].style.display = "none";
+							x -= ((x < 1) ? -2 : 1);
+							x%=3;
+							slides[x].style.display = "block";
+						}
+					</script>
+				<!------------------------------------------------------->
+			</div>
+				<div id = "chisiamo">
+					<hr></hr>
+					<h1 class = "titoli">Chi siamo?</h1>
+					<center>
+						<p>
+							La nostra compagnia è nata da un gruppo di 5 ragazzi riuniti per un progetto scolastico,<br>
+							che hanno compreso le potenzialità del progetto e deciso di iniziare una startup<br>
+							formando anche l'associazione Save the water.
+                    	</p>
+						<img src="image/chi siamo.jpg" class = "img">
+					</center>
+				</div>
+				<div id = "startup">
+					<hr></hr>
+					<h1 class = "titoli">La nostra startup</h1>
+					<center>
+						<p>
+                        	La nostra startup è nata da un progetto scolastico basato sul sesto punto dell'agenda 2030.
+                    	</p>
+						<img src="image/startup.jpg" class = "img1">
+					</center>
+				</div>
+				<div id = "obbiettivo">
+					<hr></hr>
+					<h1 class = "titoli">Il nostro Obbiettivo</h1>
+					<center>
+						<p>
+							L'obbiettivo che ci siamo posi è quello di aiutare le persone a riciclare e risparmiare acqua,<br>
+							in modo da evitare il più possibile gli sprechi.
+						</p>
+						<img src="image/obbiettivo.jpeg" class = "img2">
+					</center>
+				</div>
+				<div id = "prodotto">
+					<hr></hr>
+					<h1 class = "titoli">Ecco i nostri prodotti</h1>
+					<center>
+						<p>
+							Che tu rappresenti un'azienda o un privato, <br>
+							dai un'occhiata ai nostri prodotti e scegli quello che fa per te.
+						</p>
+						<a href="pagina azienda.html"><button class = "prodotti-temp" class = "flex-item" style="background-image: url(azienda.jpg)">AZIENDE</button></a>
+            			<a href="pagina privato.html"><button class = "prodotti1" class = "flex-item" style="background-image: url(privato.jpg)">PRIVATO</button></a>
+					</center>
+				</div>
+				<hr></hr>
+		</div>
+		<div id = "settori" class = "flex-container">
+            <h1 class = "titoli">Settori di utilizzo</h1>
+			<center>
+				<p>
+					Questi sono i settori in cui si può usufruire del nostro prodotto.
+				</p>
+			</center>
+            <a href=""><button class = "prodotti" class = "flex-item" style="background-image: url(piscina.jpg)">PISCINA</button></a>
+            <a href=""><button class = "prodotti" class = "flex-item" style="background-image: url(cucina.jpg)">CUCINA</button></a>
+            <a href=""><button class = "prodotti" class = "flex-item" style="background-image: url(bagno.jpg)">BAGNO</button></a>
+			<a href=""><button class = "prodotti" class = "flex-item" style="background-image: url(custom.jpg)">CUSTOM</button></a>
+        </div>
+		<!---------------------footer------------------------>
+		<div class="container">
+			<footer class="foot">
+			<!-- Footer main -->
+			<section class="ft-main">
+				<div class="ft-main-item">
+				<h2 class="ft-title">About</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Services</a></li>
+					<li class = "ft-scritte"><a href="#">Wallet</a></li>
+					<li class = "ft-scritte"><a href="#">Prices</a></li>
+					<li class = "ft-scritte"><a href="#">Customers</a></li>
+					<li class = "ft-scritte"><a href="#">Careers</a></li>
+				</ul>
+				</div>
+				<div class="ft-main-item">
+				<h2 class="ft-title">Resources</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Docs</a></li>
+					<li class = "ft-scritte"><a href="#">Blog</a></li>
+					<li class = "ft-scritte"><a href="#">Webinars</a></li>
+				</ul>
+				</div>
+				<div class="ft-main-item">
+				<h2 class="ft-title">Contact</h2>
+				<ul>
+					<li class = "ft-scritte"><a href="#">Help</a></li>
+					<li class = "ft-scritte"><a href="#">Sales</a></li>
+					<li class = "ft-scritte"><a href="#">Advertise</a></li>
+					<img class ="loghi" src = "image/Popular-Logo-Instagram-icon-PNG.png">
+					<img class ="loghi" src = "image/pngegg.png">
+					<img class ="loghi" src = "image/Twitter-X-Icon-PNG.png">
+				</ul>
+				</div>
+			</section>
+			<!-- Footer legal -->
+			<section class="ft-legal">
+				<ul class="ft-legal-list">
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</section>
+			</footer>
+		</div>
+	</body>
+</html>
